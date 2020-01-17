@@ -15,8 +15,39 @@ note: we perform the experiment on GTX-1080Ti and GeForce RTX-2080;
   1.Just include complete inference code  
   2.Support Total-text, CTW1500,TD500, ICDAR15, MLT-17 datasets  
 # 3.Partial Dataset Links  
-1. [CTW1500](https://www.baidu.com/)   
-2. [TD500](https://www.baidu.com/)  
-3. [Total-Text](https://www.baidu.com/) 
+1. [CTW1500](https://drive.google.com/open?id=1A2s3FonXq4dHhD64A2NCWc8NQWMH2NFR)   
+2. [TD500](https://drive.google.com/open?id=1ByluLnyd8-Ltjo9AC-1m7omZnI-FA1u0)  
+3. [Total-Text](https://drive.google.com/open?id=17_7T_-2Bu3KSSg2OkXeCxj97TBsjvueC) 
 # 4.Pretrained Models  
 The [model](https://drive.google.com/open?id=12Z4vCqvlvw5D9BA8bD9NTJwLcslP25FY) is pre-train on MLT-17 and fine-tune on each benchmark.
+
+# 5.Running tests
+run:  
+```
+sh eval.sh
+```
+The details in a are as follows:  
+```
+#!/bin/bash
+CUDA_LAUNCH_BLOCKING=1 python eval_test.py --exp_name Totaltext --checkepoch 400 --gpu 0 
+
+# threshold=0.3, threshold=0.65; test_size=(256,1024)
+#CUDA_LAUNCH_BLOCKING=1 python eval_test.py--exp_name Totaltext --checkepoch 400 --gpu 0
+
+# threshold=0.3, threshold=0.65;test_size=(512,1024)
+#CUDA_LAUNCH_BLOCKING=1 python eval_test.py --exp_name Ctw1500 --checkepoch 115 --gpu 0
+
+# threshold=0.315, threshold=0.8; test_size=(0,832)
+#CUDA_LAUNCH_BLOCKING=1 python eval_test.py --exp_name TD500 --checkepoch 125 --gpu 0
+
+# threshold=0.4, threshold=0.8; test_size=(960, 1920)
+#CUDA_LAUNCH_BLOCKING=1 python eval_test.py --exp_name Icdar2015 --checkepoch 885 --gpu 0
+
+# threshold=0.4, threshold=0.8;--test_size=(256,1920)
+#CUDA_LAUNCH_BLOCKING=1 python eval_test.py --exp_name MLT2017 --checkepoch 64 --gpu 0
+```
+Note: you should modify the corresponding parameters in [option.py](https://github.com/AnonyCode111/TextRSN/blob/master/util/option.py) file according to the notes in [eval.sh](https://github.com/AnonyCode111/TextRSN/blob/master/eval.sh)
+
+
+
+
