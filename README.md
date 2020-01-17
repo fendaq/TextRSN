@@ -53,5 +53,8 @@ Note: you should modify the corresponding parameters in [option.py](https://gith
 ![](https://github.com/AnonyCode111/TextRSN/blob/master/results/img2.png)
 # 8.Qualitative results ( [Total-Text](https://github.com/AnonyCode111/TextRSN/tree/master/vis/Totaltext_test_0) [CTW-1500](https://github.com/AnonyCode111/TextRSN/tree/master/vis/Ctw1500_test_0))
 ![](https://github.com/AnonyCode111/TextRSN/blob/master/results/img1.png)
+# License  
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
 
 
