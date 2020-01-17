@@ -8,8 +8,8 @@ PyTorch 1.2.0;
 Numpy >=1.16;  
 CUDA 10.1;  
 GCC >=9.0;  
-NVIDIA GPU(with 10G or larger GPU memory for inference); 
-note: we perform the experiment on GTX-1080Ti and GeForce RTX-2080;  
+NVIDIA GPU(with 10G or larger GPU memory for inference);  
+**Note**: we perform the experiment on GTX-1080Ti and GeForce RTX-2080;  
 # 2.Description  
 * Generally, this code has following features:  
   1.Just include complete inference code  
