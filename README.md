@@ -47,7 +47,7 @@ CUDA_LAUNCH_BLOCKING=1 python eval_test.py --exp_name Totaltext --checkepoch 400
 #CUDA_LAUNCH_BLOCKING=1 python eval_test.py --exp_name MLT2017 --checkepoch 64 --gpu 0
 ```
 Note: you should modify the corresponding parameters in [option.py](https://github.com/AnonyCode111/TextRSN/blob/master/util/option.py) file according to the annotations in [eval.sh](https://github.com/AnonyCode111/TextRSN/blob/master/eval.sh)  
-# 6.Our Method vs PSENet-1s
+# 6.Our Method *vs* PSENet-1s
 ![](https://github.com/AnonyCode111/TextRSN/blob/master/results/img3.png)
 # 7.Ablation Study  
 ![](https://github.com/AnonyCode111/TextRSN/blob/master/results/img2.png)
