@@ -46,8 +46,12 @@ CUDA_LAUNCH_BLOCKING=1 python eval_test.py --exp_name Totaltext --checkepoch 400
 # threshold=0.4, threshold=0.8;--test_size=(256,1920)
 #CUDA_LAUNCH_BLOCKING=1 python eval_test.py --exp_name MLT2017 --checkepoch 64 --gpu 0
 ```
-Note: you should modify the corresponding parameters in [option.py](https://github.com/AnonyCode111/TextRSN/blob/master/util/option.py) file according to the notes in [eval.sh](https://github.com/AnonyCode111/TextRSN/blob/master/eval.sh)
-
-
+Note: you should modify the corresponding parameters in [option.py](https://github.com/AnonyCode111/TextRSN/blob/master/util/option.py) file according to the notes in [eval.sh](https://github.com/AnonyCode111/TextRSN/blob/master/eval.sh)  
+# 6.Our Method VS PSENet-1s
+![](https://github.com/AnonyCode111/TextRSN/blob/master/results/img3.png)
+# 7.Ablation Study  
+![](https://github.com/AnonyCode111/TextRSN/blob/master/results/img2.png)
+# 8.Qualitative results ( [Total-Text](https://github.com/AnonyCode111/TextRSN/tree/master/vis/Totaltext_test_0) [CTW-1500](https://github.com/AnonyCode111/TextRSN/tree/master/vis/Ctw1500_test_0))
+![](https://github.com/AnonyCode111/TextRSN/blob/master/results/img1.png)
 
 
